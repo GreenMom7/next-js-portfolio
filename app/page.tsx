@@ -63,23 +63,10 @@ export default function Home() {
       </nav>
 
       <main className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-16">
-        <section
-          id="quote"
-          ref={(el) => {
-            sectionsRef.current[0] = el;
-          }}
-          className="min-h-screen flex flex-col justify-center gap-8 opacity-0"
-        >
-          <h2 className="font-mono text-xl md:text-2xl font-bold tracking-tight">
-            Technologies
-          </h2>
-          <Marquee />
-        </section>
-
         <header
           id="intro"
           ref={(el) => {
-            sectionsRef.current[1] = el;
+            sectionsRef.current[0] = el;
           }}
           className="min-h-screen flex items-center opacity-0"
         >
@@ -169,7 +156,7 @@ export default function Home() {
         <section
           id="work"
           ref={(el) => {
-            sectionsRef.current[2] = el;
+            sectionsRef.current[1] = el;
           }}
           className="min-h-screen py-20 sm:py-32 opacity-0"
         >
@@ -289,6 +276,19 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </section>
+
+        <section
+          id="quote"
+          ref={(el) => {
+            sectionsRef.current[2] = el;
+          }}
+          className="min-h-screen flex flex-col justify-center gap-8 opacity-0"
+        >
+          <h2 className="font-mono text-xl md:text-2xl font-bold tracking-tight">
+            Technologies
+          </h2>
+          <Marquee />
         </section>
 
         <section
