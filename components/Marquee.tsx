@@ -78,18 +78,16 @@ const Marquee: FC<Props> = ({ isReversed = false, className }) => {
       // Then set it back to the start, and repeat infinitely.
       const setupInfiniteMarqueeTimeline = () => {
         gsap.set(movingContainer.current, {
-          xPercent: isReversed ? 50 : 0,
+          xPercent: isReversed ? 0 : -50,
         });
         timeline.current = gsap
           .timeline({
             defaults: { ease: "none", repeat: -1 },
           })
           .to(movingContainer.current, {
-            xPercent: isReversed ? 0 : 50,
-            timeScale: 0.25,
-            duration: 0.8,
-          })
-          .set(movingContainer.current, { xPercent: 0 });
+            xPercent: isReversed ? -50 : 0,
+            duration: 20, // Increased from 0.8 to slow down
+          });
       };
 
       setupInfiniteMarqueeTimeline();
@@ -103,7 +101,7 @@ const Marquee: FC<Props> = ({ isReversed = false, className }) => {
     if (!timeline.current) return;
     timelineTimeScaleTween.current?.kill();
     timelineTimeScaleTween.current = gsap.to(timeline.current, {
-      timeScale: 0.25,
+      timeScale: 0.25, // Slow down to 25% speed on hover
       duration: 0.8,
     });
   };
@@ -112,7 +110,7 @@ const Marquee: FC<Props> = ({ isReversed = false, className }) => {
     if (!timeline.current) return;
     timelineTimeScaleTween.current?.kill();
     timelineTimeScaleTween.current = gsap.to(timeline.current, {
-      timeScale: 1,
+      timeScale: 1, // Back to normal speed
       duration: 0.8,
     });
   };
