@@ -43,7 +43,7 @@ export default function Home() {
     <div className="min-h-screen bg-background text-foreground relative">
       <nav className="fixed left-8 top-1/2 -translate-y-1/2 z-10 hidden lg:block">
         <div className="flex flex-col gap-4">
-          {["quote", "intro", "work", "projects", "connect"].map((section) => (
+          {["intro", "work", "quote", "projects", "connect"].map((section) => (
             <button
               key={section}
               onClick={() =>
