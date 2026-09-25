@@ -17,8 +17,29 @@ export default function Projects({ sectionRef }: ProjectsProps) {
         <div className="space-y-8">
           {[
             {
+              title: "Vehicle Routing Problem (CVRP) Optimization",
+              period: "Sep 2026 - Present",
+              association: "UTBM",
+              description:
+                "Mathematical modeling of the Capacitated Vehicle Routing Problem as an Integer Linear Program, followed by the design and implementation of metaheuristics (Genetic Algorithm, Tabu Search, Simulated Annealing, Ant Colony) and advanced methods (multi-agent systems, reinforcement learning) to solve large-scale instances. Benchmarked against reference CVRP instances on solution quality, computation time, and robustness.",
+              tech: [
+                "Python",
+                "Optimization",
+                "Metaheuristics",
+                "Reinforcement Learning",
+              ],
+            },
+            {
+              title: "GraphRAG Knowledge Graph Engineering",
+              period: "March 2026 - June 2026",
+              association: "UTBM",
+              description:
+                "Developed a GraphRAG web application built on a Neo4j knowledge graph with an integrated AI chatbot, enabling knowledge extraction from documents, real-time graph visualization, and correction of extraction errors.",
+              tech: ["Neo4j", "GraphRAG", "LLM", "Python"],
+            },
+            {
               title: "Moodle-Style Learning Platform",
-              period: "Mar 2025 - Jun 2025",
+              period: "March 2025 - Jun 2025",
               association: "UTBM",
               description:
                 "Full stack development of a Moodle-style web application using the MEAN stack (MongoDB, Express.js, Angular, Node.js). Created a comprehensive learning management system with database integration and modern frontend architecture.",
@@ -39,7 +60,7 @@ export default function Projects({ sectionRef }: ProjectsProps) {
             },
             {
               title:
-                "Interface graphique pour une plateforme de simulation électromagnétique-multiphysique",
+                "Interface graphic for Electromagnetics simulation platform",
               period: "Mar 2024 - Apr 2024",
               association: "LEAT Research Lab",
               description:
@@ -48,7 +69,7 @@ export default function Projects({ sectionRef }: ProjectsProps) {
             },
             {
               title: "AI Wildfire Detection System",
-              period: "2023",
+              period: "September 2023 - Janury 2024",
               association: "IUT Nice Côte d'Azur",
               description:
                 "Built machine learning models using MLP and CNN architectures to detect wildfires from hyperspectral satellite imagery. Utilized Keras & TensorFlow in Google Colab environment.",
