@@ -24,23 +24,36 @@ export default function Experience({ sectionRef }: ExperienceProps) {
         <div className="space-y-8 sm:space-y-12">
           {[
             {
+              year: "2026",
+              role: "Final-Year Student",
+              company: "UTBM",
+              type: "Diplôme d'ingénieur, Computer Science",
+              description:
+                "Back on campus for the final year, specializing in Data Science and Artificial Intelligence. Currently working on a Vehicle Routing Problem (CVRP) optimization project, combining mathematical modeling with metaheuristics.",
+              tech: [
+                "Artificial Intelligence",
+                "Optimization",
+                "Machine Learning",
+              ],
+            },
+            {
               year: "2025",
               role: "Full Stack Developer",
               company: "Consury Technic Sdn. Bhd.",
               type: "Internship",
               description:
-                "Developing modern web applications using Next.js framework in a hybrid work environment.",
+                "Developed modern web applications using Next.js in a hybrid work environment, with a strong focus on UX/UI and user feedback integration.",
               tech: ["Next.js", "React", "TypeScript"],
             },
-            {
-              year: "2024",
-              role: "Master of Engineering",
-              company: "UTBM",
-              type: "Computer Science",
-              description:
-                "Pursuing advanced studies in Computer Science, focusing on software engineering and artificial intelligence.",
-              tech: ["Research", "AI/ML", "Software Engineering"],
-            },
+            // {
+            //   year: "2024",
+            //   role: "Engineering Diploma",
+            //   company: "UTBM",
+            //   type: "Computer Science",
+            //   description:
+            //     "Pursuing advanced studies in Computer Science, focusing on software engineering and artificial intelligence.",
+            //   tech: ["Research", "AI/ML", "Software Engineering"],
+            // },
             {
               year: "2024",
               role: "Research Assistant",
@@ -52,7 +65,7 @@ export default function Experience({ sectionRef }: ExperienceProps) {
             },
             {
               year: "2022",
-              role: "Bachelor's Degree",
+              role: "Bachelor Universitaire de Technologie",
               company: "IUT Nice Côte d'Azur",
               type: "Electrical Engineering",
               description:
@@ -65,7 +78,7 @@ export default function Experience({ sectionRef }: ExperienceProps) {
               company: "Universiti Kuala Lumpur",
               type: "Foundation",
               description:
-                "Achieved 17.65/20. Intensive French language studies with engineering fundamentals including Mathematics, Physics, and C++ programming.",
+                "Achieved 15.02/20. Intensive French language studies with engineering fundamentals including Mathematics, Physics, and C++ programming.",
               tech: ["C++", "Arduino", "Engineering Fundamentals"],
             },
           ].map((job, index) => (
@@ -116,7 +129,7 @@ export default function Experience({ sectionRef }: ExperienceProps) {
                   Majlis Amanah Rakyat (MARA)
                 </div>
                 <div className="text-sm text-muted-foreground mt-1">
-                  Jul 2021 — Present · 4 yrs 6 mos
+                  Jul 2021 — Present · 5 yrs 6 mos
                 </div>
               </div>
             </div>
