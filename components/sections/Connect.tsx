@@ -21,7 +21,7 @@ export default function Connect({ sectionRef }: ConnectProps) {
 
             <div className="space-y-4">
               <a
-                href="mailto:akmal@example.com"
+                href="mailto:akmalsabri73@gmail.com"
                 className="group flex items-center gap-3 text-foreground hover:text-muted-foreground transition-colors duration-300"
               >
                 <span className="text-base sm:text-lg">Get in touch</span>
