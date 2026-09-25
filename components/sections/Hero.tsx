@@ -15,7 +15,7 @@ export default function Hero({ sectionRef }: HeroProps) {
         <div className="lg:col-span-3 space-y-6 sm:space-y-8">
           <div className="space-y-3 sm:space-y-2">
             <div className="text-sm text-muted-foreground font-mono tracking-wider">
-              PORTFOLIO / 2025
+              PORTFOLIO / 2026
             </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight">
               Muhammad
@@ -26,8 +26,8 @@ export default function Hero({ sectionRef }: HeroProps) {
 
           <div className="space-y-6 max-w-md">
             <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-              Full Stack Developer & Computer Science Student crafting
-              innovative solutions at the intersection of
+              Final-Year Computer Science & AI Student crafting innovative
+              solutions at the intersection of
               <span className="text-foreground"> electrical engineering</span>,
               <span className="text-foreground"> software development</span>,
               and
@@ -37,9 +37,9 @@ export default function Hero({ sectionRef }: HeroProps) {
             <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                Available for work
+                Looking for a final-year internship — Feb 2027
               </div>
-              <div>Kuala Lumpur, Malaysia</div>
+              <div>Belfort, France</div>
             </div>
           </div>
         </div>
@@ -50,12 +50,12 @@ export default function Hero({ sectionRef }: HeroProps) {
               CURRENTLY
             </div>
             <div className="space-y-2">
-              <div className="text-foreground">Full Stack Developer</div>
+              <div className="text-foreground">Final-Year Student</div>
               <div className="text-muted-foreground">
-                @ Consury Technic Sdn. Bhd.
+                @ UTBM (Engineering Diploma, Computer Science)
               </div>
               <div className="text-xs text-muted-foreground">
-                Sep 2025 — Present
+                Mar 2026 — Present
               </div>
             </div>
           </div>
@@ -64,10 +64,10 @@ export default function Hero({ sectionRef }: HeroProps) {
             <div className="text-sm text-muted-foreground font-mono">FOCUS</div>
             <div className="flex flex-wrap gap-2">
               {[
-                "UI/UX",
-                "Web Development",
+                "Data Science",
                 "Machine Learning",
-                "Artificial Intelligence",
+                "Generative AI",
+                "Web Development",
               ].map((skill) => (
                 <span
                   key={skill}
